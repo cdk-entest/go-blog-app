@@ -444,11 +444,11 @@ func QueryAOSS(vec []float64) ([]string, error) {
 cd /home/ec2-user/
 wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
 tar -xvf go1.21.5.linux-amd64.tar.gz
-export 'PATH=/home/ec2-user/go/bin:$PATH' >> ~/.bashrc
-
-wget https://github.com/cdk-entest/golang-bedrock-demo/archive/refs/heads/main.zip
+echo 'export PATH=/home/ec2-user/go/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+wget https://github.com/cdk-entest/go-blog-app/archive/refs/heads/main.zip
 unzip main
-cd golang-bedrock-demo-main
+cd go-blog-app-main
 go mod tidy
 go run .
 ```

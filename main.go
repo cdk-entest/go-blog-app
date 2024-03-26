@@ -23,7 +23,7 @@ func init() {
 
 }
 
-func main() {
+func main1() {
 
 	mux := http.NewServeMux()
 
